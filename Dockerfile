@@ -38,6 +38,6 @@ RUN  yum -y install gawk
 
 #CMD ["gawk" , "--v"]
 
-COPY ./trans /trans
+COPY ./trans /bin/trans
 
-CMD [ "/trans", "--version" ]
+CMD [ "trans", "--version" ]
