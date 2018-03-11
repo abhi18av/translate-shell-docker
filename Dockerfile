@@ -32,7 +32,8 @@ USER root
 
 #CMD ["bash" , "--version"]
 
-RUN  yum -y install gawk
+RUN  yum -y install epel-release gawk hunspell fribidi
+
 
 #CMD ["which" , "gawk"]
 
