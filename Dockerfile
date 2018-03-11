@@ -28,6 +28,7 @@ FROM centos
 
 LABEL author="abhi18av"
 
+USER root
 
 #CMD ["bash" , "--version"]
 
@@ -37,3 +38,6 @@ RUN  yum -y install gawk
 
 #CMD ["gawk" , "--v"]
 
+COPY ./trans /trans
+
+CMD [ "/trans", "--version" ]
