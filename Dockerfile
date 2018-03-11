@@ -40,4 +40,18 @@ RUN  yum -y install gawk
 
 COPY ./trans /bin/trans
 
+RUN chmod a+x /bin/trans
+
 CMD [ "trans", "--version" ]
+
+
+
+
+
+
+
+
+
+
+
+
