@@ -11,20 +11,24 @@ RUN  yum -y install epel-release gawk hunspell fribidi
 RUN yum -y install mpg123
 
 
+#RUN yum -y install wget
+
 #CMD ["which" , "gawk"]
 
 #CMD ["gawk" , "--v"]
+
+
+#CMD ["wget" , "--version"]
+
+
+
+#RUN wget git.io/trans -O /bin/trans
 
 COPY ./trans /bin/trans
 
 RUN chmod a+x /bin/trans
 
 #CMD [ "trans", "--version" ]
-
-
-# docker build -t translate 
-# docker tag translate abhi18av/translate-shell-docker                                                                                                                 
-# docker push abhi18av/translate-shell-docker                                                                                  
 
 
 ####### 

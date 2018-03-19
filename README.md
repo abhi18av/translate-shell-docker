@@ -1,14 +1,9 @@
 # translate-shell-docker
 
-sudo docker push abhi18av/translate-shell-docker                                                                           
+NOTE: I'm using the single file install from https://github.com/soimort/translate-shell
+
+
 sudo docker run -it abhi18av/translate-shell-docker trans en:es "hello" -engine bing   
-
-
-sudo docker rmi abhi18av/translate-shell-docker --force                                                                    
-docker pull abhi18av/translate-shell-docker                                                                                
-sudo docker pull abhi18av/translate-shell-docker                                                                           
-sudo docker run -it abhi18av/translate-shell-docker trans --version   
-
 
 
 https://hub.docker.com/r/abhi18av/translate-shell-docker/
