@@ -11,7 +11,7 @@ RUN  yum -y install epel-release gawk hunspell fribidi
 RUN yum -y install mpg123
 
 
-#RUN yum -y install wget
+RUN yum -y install wget
 
 #CMD ["which" , "gawk"]
 
@@ -22,9 +22,9 @@ RUN yum -y install mpg123
 
 
 
-#RUN wget git.io/trans -O /bin/trans
+RUN wget git.io/trans -O /bin/trans
 
-COPY ./trans /bin/trans
+#COPY ./trans /bin/trans
 
 RUN chmod a+x /bin/trans
 
